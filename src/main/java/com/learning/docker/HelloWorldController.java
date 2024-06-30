@@ -13,4 +13,12 @@ public class HelloWorldController {
                  { message: Hello World Java v19 }
                 """;
     }
+
+    @GetMapping(path = "/hello")
+    public String hello() {
+        // Implemented using String Templates
+        return """
+                 { message: Hello ! }
+                """;
+    }
 }
